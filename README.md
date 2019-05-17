@@ -1,15 +1,16 @@
 # Initiation à PowerShell
 
-[<img src="https://github.com/PowerShell/PowerShell/raw/master/assets/Powershell_256.png" align="right" width="80">](https://msdn.microsoft.com/en-us/powershell/)
+[<img src="https://github.com/PowerShell/PowerShell/raw/master/assets/Powershell_256.png" align="left" width="80">](https://msdn.microsoft.com/en-us/powershell/)
 
 Les sources de la formation d'initiation à Powershell
 
 ## Contenu
 
-* [API Wrapper](#api-wrapper)
+* [Codes](https://github.com/SynapsysIT/FormationPS/tree/master/Codes) - Morceau de codes utilisés pour les démonstrations.
+
+* [Exercices](https://github.com/SynapsysIT/FormationPS/tree/master/Exercices) - Correction des exercices
 
   
-
 ## Ressources
 
 ### Blogs
@@ -17,13 +18,12 @@ Les sources de la formation d'initiation à Powershell
 - [Windows PowerShell Blog](https://blogs.msdn.microsoft.com/powershell/) - Blog Officiel Powershell
 - [Hey, Scripting Guy! Blog](http://blogs.technet.com/b/heyscriptingguy/) - Blog Microsoft qui publie des Tips et des bouts de code
 - [PowerShellExplained](https://powershellexplained.com) - Blog Kevin Marquette [MVP]. Le meilleur pour apprendre les différrentes structures, leurs syntaxes et leurs utilisations.
-- [Mike F. Robbins](http://mikefrobbins.com/) - Microsoft MVP. SAPIEN Tech MVP. Co-author of Windows PowerShell TFM 4th Edition.
+- [Idera](https://community.idera.com/database-tools/powershell/powertips/b/tips) - Chaque jour une astuce / commande Powershell
 
 ## E-Books
 
-- [Exploring PowerShell Automation](https://www.manning.com/books/exploring-powershell-automation) - a free eBook sampler that gives you an overview of how to administer your environment. 
-
-  
+- [Powershell Notes For Professional](https://github.com/SynapsysIT/FormationPS/raw/master/EBooks/PowerShellNotesForProfessionals.pdf) - **La bible !** A garder à porter de clics en permanence !
+- [Autres](https://github.com/SynapsysIT/FormationPS/tree/master/EBooks)
 
 ## Communautés
 

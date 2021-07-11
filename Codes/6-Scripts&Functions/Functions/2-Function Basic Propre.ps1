@@ -5,9 +5,9 @@ function Write-Presentation2
         [Parameter(Mandatory=$true,Position=0)]
         [String]$name,
         [Parameter(Mandatory=$true,Position=1)]
-        [ipaddress]$IP
+        [int]$age
     )
 
-   Write-host "Bonjour $name, Ton IP $age ans"
+   Write-host "Bonjour $name, Tu as $age ans"
 
 } 

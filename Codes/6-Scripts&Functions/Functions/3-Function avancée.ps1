@@ -40,13 +40,13 @@ $ComputersObject = foreach ($Computer in $Computers)
 	}
 }
 
-
+$Computers = "google.fr", "127.0.0.1", "25.98.74.10", "12.87.125.63"
 
 Function Ping-IP
 {
     [CmdletBinding()]
     param(
-        [Parameter(Mandatory = $True, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True)]
+        [Parameter(Mandatory = $True, ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $false)]
 		[Alias("Name")]
 		[Alias("ServerName")]			
         [string[]]$computername

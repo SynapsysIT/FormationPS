@@ -1,11 +1,13 @@
 #Le blocs IF permet l'éxécution d'un bloc si une condition est remplie.
 
-$test = "Condition" 
+$test = Get-Service spooler
 
-if ($test -eq "Condition")
+
+if (Get-Process notepad -ErrorAction SilentlyContinue)
 {
     Write-Host "Condition remplie" 
 }
+
 
 #On peut y rejoindre un bloc Else qui permettra d'éxécuter du code si la condition IF n'est pas rempli.
 
@@ -19,8 +21,8 @@ else
 }
 
 #Le bloc "Elseif" permet lui de controler une nouvelle condition si la première n'est pas rempli.
-
-if ($test -eq "Truc")
+$test ="Condition"
+if (($test -ne "Truc"))
 {
     Write-Host "IF Condition remplie" 
 }
@@ -44,7 +46,7 @@ $string = "false"
 
 If($?)
 {    
-    Write-Host "Le booleen est $true"
+    Write-Host "Aucune erreur à la commande précédent"
 }
 
 if (Get-Process notepad)

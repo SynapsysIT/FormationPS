@@ -17,15 +17,24 @@ $Files | ForEach-Object {
  } 
 
 
+$Files = Get-ChildItem $env:TEMP | Sort-Object Length -Descending |Select-Object -First 10
+
+foreach ($file in $files)
+{
+    $Size = $file.Length/1MB
+
+    
+}
+
 
 #Nous pouvons créer un PSCustomobject via un ForEach
-$10MultiplicationTable = foreach ($Number in 1..10)
+foreach ($Number in 1..10)
 {
     [PSCustomObject]@{
-        Number = $Number
+        NomFichier = $file.Name
         X = "10"
         Egal = $Number*10
-    }
+    }  
 }
 
 

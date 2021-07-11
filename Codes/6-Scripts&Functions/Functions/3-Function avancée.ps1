@@ -2,9 +2,7 @@
 Function Write-InColors {
 	[CmdletBinding()]
 	param(
-		[Parameter(Mandatory=$True,
-				   ValueFromPipeline=$True,
-				   ValueFromPipelineByPropertyName=$True)]
+		[Parameter(Mandatory=$True,ValueFromPipeline=$True,ValueFromPipelineByPropertyName=$True)]
 		[string[]]$Name
 	)
 
@@ -17,12 +15,14 @@ Function Write-InColors {
 		$AllColors = [Enum]::GetValues([ConsoleColor]) | Where-Object {$_ -ne "Black" }
 
 		$Color = Get-Random -InputObject $AllColors
-
 		Write-Verbose "Traitement de l'objet $Name"
 		Write-Host $Name -ForegroundColor $Color	
 
 	}
-	END {Write-Verbose "Fin du traitement"}
+	END 
+	{
+		Write-Verbose "Fin du traitement"
+	}
 }
 
 

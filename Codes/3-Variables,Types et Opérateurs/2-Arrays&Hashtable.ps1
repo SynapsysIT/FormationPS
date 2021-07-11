@@ -17,13 +17,19 @@ Il s'agit d'une table de données-clés / valeur.
 #>
 
 #Creation d'une hashtable
-$TMNT = @{}
+$Hashtable = @{
+    Package = "VLC"
+    Version = "5.3"
+    Architecture = "x64"
+}
 
-$Tortue = "Raphael"
-$Arme = "Saïs"
 
-$TMNT.Add($Tortue,$Arme)
-$TMNT.Add("Donatello","Bo")
-$TMNT.Add("Michelangelo","Nunchakus")
+Install-Package -name $Hashtable.Package -version $Hashtable.Version
+
+
+
+
+
+
 
     
